@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>User List</title>
+    <link rel="stylesheet" href="users_style.css">
+</head>
+<body>
+
+    <h2>Registered Users</h2>
+
+    <ol id="userList"></ol>
+
+    <script>
+        const users = JSON.parse(localStorage.getItem('users')) || []; 
+
+        const userList = document.getElementById('userList');
+        users.forEach(user => {
+            const listItem = document.createElement('li');
+            listItem.textContent = `${user.name} - ${user.email}`;
+            userList.appendChild(listItem);
+        });
+    </script>
+
+</body>
+</html>

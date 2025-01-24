@@ -1,0 +1,66 @@
+body {
+    background-color: #000000;
+    color:#fff
+}
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 250px;
+    background-color: #03e2ff;
+    color: #fff;
+    padding-top: 20px;
+    overflow-y: auto;
+}
+
+.sidebar .logo {
+    margin-bottom: 20px;
+}
+
+.sidebar a {
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    padding: 15px;
+    margin-bottom: 10px;
+}
+
+.sidebar a:hover {
+    background-color: #111;
+}
+
+.sidebar .submenu {
+    display: none;
+    padding-left: 20px;
+}
+
+.sidebar a.active + .submenu,
+.sidebar a:hover + .submenu {
+    display: block;
+}
+
+.content {
+    margin-left: 250px;
+    padding: 20px;
+}
+
+.card {
+    margin-bottom: 20px;
+}
+
+.card-body {
+    text-align: center;
+}
+
+.card-title {
+    font-size: 1.2rem;
+}
+
+.stat-box {
+    border: 1px solid #ccc;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+}
