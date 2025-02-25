@@ -1,0 +1,14 @@
+{
+  "name": "p3a",
+  "version": "1.0.0",
+  "description": "wad prac 3a",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Kabir",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.21.2"
+  }
+}
